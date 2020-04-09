@@ -9,7 +9,11 @@ bitcore.versionGuard = function(version) {
     var message = 'More than one instance of bitcore-lib found. ' +
       'Please make sure to require bitcore-lib and check that submodules do' +
       ' not also include their own bitcore-lib dependency.';
-    throw new Error(message);
+    console.warn(message);
+  }
+
+  if (version !== global._bitcore) {
+    console.warn('More than one instance with different versions of bitcore-lib found.', global._bitcore, bitcore.version)
   }
 };
 bitcore.versionGuard(global._bitcore);
