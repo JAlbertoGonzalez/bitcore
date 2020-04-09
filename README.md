@@ -1,6 +1,11 @@
 # Bitcore Lib
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-lib.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-lib)
+## About this fork
+
+This is a "sub-fork" of the bitcore-lib package located at [bitpay/bitcore](https://github.com/bitpay/bitcore/tree/master/packages/bitcore-lib).
+
+The only difference is I removed the versionWard constraint, in order to be used alongside [bitcore-ecies](https://github.com/JAlbertoGonzalez/bitcore-ecies) and [bitcore-message](https://github.com/JAlbertoGonzalez/bitcore-message)
+
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-lib)
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-lib.svg?style=flat-square)](https://coveralls.io/r/bitpay/bitcore-lib)
 
@@ -13,11 +18,7 @@ Bitcoin is a powerful new peer-to-peer platform for the next generation of finan
 ## Get Started
 
 ```sh
-npm install bitcore-lib
-```
-
-```sh
-bower install bitcore-lib
+npm install JAlbertoGonzalez/bitcore-lib
 ```
 
 ## Documentation
@@ -51,7 +52,7 @@ You can also use our pre-generated files, provided for each release along with a
 ## Development & Tests
 
 ```sh
-git clone https://github.com/bitpay/bitcore-lib
+git clone https://github.com/JAlbertoGonzalez/bitcore-lib
 cd bitcore-lib
 npm install
 ```
